@@ -54,6 +54,14 @@ UKF::UKF() {
 
   Hint: one or more values initialized above might be wildly off...
   */
+  // Set state dimension
+  int n_x_ = 5;
+  // Set augmented state dimension
+  int n_aug_ = 7;
+  // Set sigma point spreading parameter
+  double lambda_ = 3 - n_aug_;
+  // initialize predicted sigma points matrix
+  MatrixXd Xsig_pred_ = MatrixXd(n_x_, 2 * n_aug_ + 1);
 }
 
 UKF::~UKF() {}
