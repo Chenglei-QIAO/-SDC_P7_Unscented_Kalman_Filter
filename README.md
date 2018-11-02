@@ -32,25 +32,17 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 ## Results
 In the simulation, my EKF produces the following results:  
 
-+ Test with Dataset 1
+![result](./images/rmse_output.png)
 
   Param |  RMSE
   :---: | :----:
-  px    | 0.0973
-  py    | 0.0855
-  vx    | 0.4513
-  vy    | 0.4399
+  px    | 0.0656
+  py    | 0.0815
+  vx    | 0.2460
+  vy    | 0.1919
 
-+ Test with Dataset 2
 
-  Param |  RMSE
-  :---: | :----:
-  px    | 0.0726
-  py    | 0.0965
-  vx    | 0.4216
-  vy    | 0.4932
-
-We can see that for both tests, `px,py,vx,vy` output coordinates have an `RMSE < [.11, .11, 0.52, 0.52]`, which turns out that my EKF works well.
+We can see that for both tests, `px,py,vx,vy` output coordinates have an `RMSE < [.09, .10, .40, .30].`, which turns out that my EKF works well.
 
 
 
